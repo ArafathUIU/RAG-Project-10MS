@@ -1,0 +1,46 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c;
+}
+
+/* Animation for typing indicator */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.typing-dot {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+.typing-dot:nth-child(1) {
+    animation-delay: 0s;
+}
+.typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Language switch animation */
+.language-switch {
+    transition: all 0.3s ease;
+}
+.language-switch.active {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.5);
+}
